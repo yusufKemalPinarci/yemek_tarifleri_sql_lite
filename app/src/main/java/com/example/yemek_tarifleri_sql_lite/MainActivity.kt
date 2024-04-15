@@ -14,10 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
-
-
     }
 
 
@@ -30,15 +26,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
         if(item.itemId==R.id.yemek_ekle){
-
             val action = ListeFragmentDirections.actionListeFragmentToTarifFragment()
             Navigation.findNavController(this,R.id.fragmentContainerView2).navigate(action)
 
         }
-
-
 
         return super.onOptionsItemSelected(item)
     }

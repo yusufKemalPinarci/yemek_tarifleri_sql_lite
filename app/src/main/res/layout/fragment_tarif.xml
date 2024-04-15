@@ -18,14 +18,14 @@
         android:ems="10"
         android:hint="@string/yemek_ismi_giriniz"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/YemekMalzemeleriEditText"
+        app:layout_constraintBottom_toTopOf="@+id/yemekMalzemeleri"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/YemekMalzemeleriEditText"
+        android:id="@+id/yemekMalzemeleri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -49,7 +49,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/YemekMalzemeleriEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/yemekMalzemeleri" />
 
     <ImageView
 
@@ -63,8 +63,20 @@
         android:src="@drawable/gorsel_secimi_tiklayiniz"
         app:layout_constraintBottom_toTopOf="@+id/yemekIsmiEditText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resim seçmek için tıklayınız"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
